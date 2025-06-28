@@ -1,0 +1,17 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/application",
+    "crates/gpu"
+]
+
+[workspace.dependencies]
+gpu = { path = "crates/gpu" }
+winit = { version = "0.30" }
+env_logger = "0.10"
+log = "0.4"
+wgpu = { version = "25.0", features = ["vulkan"] }
+pollster = "0.4.0"
+anyhow = "1.0.98"
+bytemuck = { version = "1.16", features = ["derive"] }
+image = { version = "0.24", features = ["png", "jpeg"] }

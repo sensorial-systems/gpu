@@ -1,0 +1,15 @@
+[package]
+name = "application"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gpu.workspace = true
+winit.workspace = true
+env_logger.workspace = true
+log.workspace = true
+wgpu.workspace = true
+pollster.workspace = true
+anyhow.workspace = true
+bytemuck.workspace = true
+image.workspace = true
